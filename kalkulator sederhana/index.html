@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calkulator Sederhana</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>kalkulator</title>
   </head>
   <body>
-    <h1>Kalkulaor Sederhana</h1>
     <div class="kalkulator">
-      <input type="text" id="layar" />
-      <div class="container-tombol">
-        <span class="tombol operator">C</span>
-        <span class="tombol operator"><</span>
-        <!-- <span class="tombol operator">.</span> -->
-        <span class="tombol operator">%</span>
-        <span class="tombol operator">/</span>
-        <span class="tombol">7</span>
-        <span class="tombol">8</span>
-        <span class="tombol">9</span>
-        <span class="tombol operator">*</span>
-        <span class="tombol">4</span>
-        <span class="tombol">5</span>
-        <span class="tombol">6</span>
-        <span class="tombol operator">+</span>
-        <span class="tombol">1</span>
-        <span class="tombol">2</span>
-        <span class="tombol">3</span>
-        <span class="tombol operator">-</span>
-        <span class="tombol" id="nol">0</span>
-        <span class="tombol">.</span>
-        <span class="tombol" id="hitung">=</span>
-      </div>
+      <h2 class="judul">Kalkulator Sederhana</h2>
+      <form method="post" action="#">
+        <input
+          type="number"
+          name="bil1"
+          class="bil"
+          autocomplete="off"
+          placeholder="Masukan Bilangan"
+        />
+        <select class="opt" name="operasi">
+          <option value="tambah">+</option>
+          <option value="kurang">-</option>
+          <option value="kali">x</option>
+          <option value="bagi">/</option>
+        </select>
+        <input
+          type="number"
+          name="bil2"
+          class="bil"
+          autocomplete="off"
+          placeholder="Masukan BIlangan"
+        />
+        <input type="submit" name="hitung" value="Hitung" class="tombol" />
+      </form>
+      <h2 class="hasil">Hasil</h2>
+      <input type="number" class="bil2" />
     </div>
   </body>
-  <script type="text/javascript" src="hitung.js"></script>
 </html>
